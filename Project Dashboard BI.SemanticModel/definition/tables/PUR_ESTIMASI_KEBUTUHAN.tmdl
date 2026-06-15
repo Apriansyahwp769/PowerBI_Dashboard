@@ -1,0 +1,52 @@
+table PUR_ESTIMASI_KEBUTUHAN
+	lineageTag: b072c6db-3354-4182-a853-578771cdaa35
+
+	column Column1
+		dataType: string
+		lineageTag: 10b3c341-7daa-4aff-8adb-b6002118d87b
+		summarizeBy: none
+		sourceColumn: Column1
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column2
+		dataType: string
+		lineageTag: cebb8172-0120-4182-849d-8b82ad4845a5
+		summarizeBy: none
+		sourceColumn: Column2
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column3
+		dataType: string
+		lineageTag: f7d52cf7-bc3b-404a-aeda-a2a565ef5519
+		summarizeBy: none
+		sourceColumn: Column3
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column4
+		dataType: string
+		lineageTag: ecb23da2-16a2-455b-a7b6-6dd1c708a924
+		summarizeBy: none
+		sourceColumn: Column4
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column5
+		dataType: string
+		lineageTag: cb70eb21-b7b0-49aa-a825-c5bb2dee4629
+		summarizeBy: none
+		sourceColumn: Column5
+
+		annotation SummarizationSetBy = Automatic
+
+	partition PUR_ESTIMASI_KEBUTUHAN = m
+		mode: import
+		source =
+				let
+				    Source = GoogleSheets.Contents("https://docs.google.com/spreadsheets/d/13DbZIVzPd4ueBI_V5jcBWOYw_VOmY44NSMolUNm8T_8/edit?gid=1402577654#gid=1402577654"),
+				    PUR_ESTIMASI_KEBUTUHAN_Table = Source{[name="PUR_ESTIMASI_KEBUTUHAN",ItemKind="Table"]}[Data]
+				in
+				    PUR_ESTIMASI_KEBUTUHAN_Table
+

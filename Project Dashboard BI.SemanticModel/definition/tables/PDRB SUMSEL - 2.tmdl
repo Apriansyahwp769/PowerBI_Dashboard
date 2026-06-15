@@ -1,0 +1,60 @@
+table 'PDRB SUMSEL - 2'
+	lineageTag: df8850c8-d2e6-4aa8-a523-bc4978f513bf
+
+	column Column1
+		dataType: string
+		lineageTag: 7ee79da4-e006-4267-a20a-cfa02cb5a96d
+		summarizeBy: none
+		sourceColumn: Column1
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column2
+		dataType: string
+		lineageTag: 9d838cb1-18c2-4153-8044-2655480b054c
+		summarizeBy: none
+		sourceColumn: Column2
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column3
+		dataType: string
+		lineageTag: ac8d6e88-4f98-4cc3-85fe-1c7c506158bf
+		summarizeBy: none
+		sourceColumn: Column3
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column4
+		dataType: string
+		lineageTag: 544e5710-9eef-4ee3-9cc3-43c96f34f174
+		summarizeBy: none
+		sourceColumn: Column4
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column5
+		dataType: string
+		lineageTag: 35bb904a-f679-48bc-8519-51725473a782
+		summarizeBy: none
+		sourceColumn: Column5
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column6
+		dataType: string
+		lineageTag: 9aea64a0-026f-4363-8f69-36582d443e2b
+		summarizeBy: none
+		sourceColumn: Column6
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'PDRB SUMSEL - 2' = m
+		mode: import
+		source =
+				let
+				    Source = GoogleSheets.Contents("https://docs.google.com/spreadsheets/d/13DbZIVzPd4ueBI_V5jcBWOYw_VOmY44NSMolUNm8T_8/edit?gid=1402577654#gid=1402577654"),
+				    #"PDRB SUMSEL - 2_Table" = Source{[name="PDRB SUMSEL - 2",ItemKind="Table"]}[Data]
+				in
+				    #"PDRB SUMSEL - 2_Table"
+

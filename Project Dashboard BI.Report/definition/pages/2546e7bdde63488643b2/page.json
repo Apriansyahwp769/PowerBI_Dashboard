@@ -1,0 +1,8 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "2546e7bdde63488643b2",
+  "displayName": "Harga Komoditas",
+  "displayOption": "ActualSize",
+  "height": 5101,
+  "width": 1920
+}

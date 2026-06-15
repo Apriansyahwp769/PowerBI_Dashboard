@@ -1,0 +1,100 @@
+table SISTEM_PEMBAYARAN
+	lineageTag: d141606a-5eae-4125-ac39-7792d79613c5
+
+	column Column1
+		dataType: string
+		lineageTag: 9884ea02-e594-4d20-938a-e13b66bba925
+		summarizeBy: none
+		sourceColumn: Column1
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column2
+		dataType: string
+		lineageTag: a094c77f-2e55-439d-8661-e7ce64d5acac
+		summarizeBy: none
+		sourceColumn: Column2
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column3
+		dataType: string
+		lineageTag: 3368c31e-d2c5-433d-951d-1a659abc2a52
+		summarizeBy: none
+		sourceColumn: Column3
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column4
+		dataType: string
+		lineageTag: f46f46a3-2d35-423b-9283-a805fc35ceed
+		summarizeBy: none
+		sourceColumn: Column4
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column5
+		dataType: string
+		lineageTag: fdb89e76-4271-419e-8ace-385ff2ab729b
+		summarizeBy: none
+		sourceColumn: Column5
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column6
+		dataType: string
+		lineageTag: ef81242b-b860-4d20-8519-943d2245aac3
+		summarizeBy: none
+		sourceColumn: Column6
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column7
+		dataType: string
+		lineageTag: 9aae1faa-312c-40a6-9152-5c1f6e604b06
+		summarizeBy: none
+		sourceColumn: Column7
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column8
+		dataType: string
+		lineageTag: 0202e9e2-a924-4435-86dc-bed41f039ac9
+		summarizeBy: none
+		sourceColumn: Column8
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column9
+		dataType: string
+		lineageTag: aba20668-5e7a-4996-b4b2-7ee841d1450a
+		summarizeBy: none
+		sourceColumn: Column9
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column10
+		dataType: string
+		lineageTag: 8732d52b-3414-4f8d-922f-060218a50b19
+		summarizeBy: none
+		sourceColumn: Column10
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column11
+		dataType: string
+		lineageTag: 51ac9bfa-6f76-4000-b1ea-6b55214de494
+		summarizeBy: none
+		sourceColumn: Column11
+
+		annotation SummarizationSetBy = Automatic
+
+	partition SISTEM_PEMBAYARAN = m
+		mode: import
+		source =
+				let
+				    Source = GoogleSheets.Contents("https://docs.google.com/spreadsheets/d/13DbZIVzPd4ueBI_V5jcBWOYw_VOmY44NSMolUNm8T_8/edit?gid=1402577654#gid=1402577654"),
+				    SISTEM_PEMBAYARAN_Table = Source{[name="SISTEM_PEMBAYARAN",ItemKind="Table"]}[Data]
+				in
+				    SISTEM_PEMBAYARAN_Table
+

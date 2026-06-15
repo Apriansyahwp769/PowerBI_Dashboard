@@ -1,0 +1,228 @@
+table 'STABILITAS KEUANGAN'
+	lineageTag: 3ebdeee6-f4ab-492a-8d68-2335d7ea1ca0
+
+	column Column1
+		dataType: string
+		lineageTag: 5ba01a0d-0c7b-4a31-a916-ef6da41d2544
+		summarizeBy: none
+		sourceColumn: Column1
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column2
+		dataType: string
+		lineageTag: beedff23-1e0d-4d42-a846-5981f8056b93
+		summarizeBy: none
+		sourceColumn: Column2
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column3
+		dataType: string
+		lineageTag: 0004e367-2537-4f00-8383-88826649060d
+		summarizeBy: none
+		sourceColumn: Column3
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column4
+		dataType: string
+		lineageTag: 83ecb508-d985-4faa-98a6-da79d88665bb
+		summarizeBy: none
+		sourceColumn: Column4
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column5
+		dataType: string
+		lineageTag: d8bd1554-c423-468c-a29e-c68908008b3f
+		summarizeBy: none
+		sourceColumn: Column5
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column6
+		dataType: string
+		lineageTag: 6f37e4aa-3881-445b-8da7-54da31bdbe1c
+		summarizeBy: none
+		sourceColumn: Column6
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column7
+		dataType: string
+		lineageTag: b7a4874e-bbd9-4075-ba48-270bf1bd30d7
+		summarizeBy: none
+		sourceColumn: Column7
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column8
+		dataType: string
+		lineageTag: 8a892656-2fa5-4a7e-9df7-6a64ece621a3
+		summarizeBy: none
+		sourceColumn: Column8
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column9
+		dataType: string
+		lineageTag: 3ae0ec3c-7d80-42d9-b313-352e7366ebd1
+		summarizeBy: none
+		sourceColumn: Column9
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column10
+		dataType: string
+		lineageTag: 8d61dfd1-316c-448b-97d4-6675fc0eddcf
+		summarizeBy: none
+		sourceColumn: Column10
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column11
+		dataType: string
+		lineageTag: cf55fe21-b4cb-4c9d-9537-96354a577ef8
+		summarizeBy: none
+		sourceColumn: Column11
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column12
+		dataType: string
+		lineageTag: 297a0793-7f16-4d2e-9e5f-607ae3b52036
+		summarizeBy: none
+		sourceColumn: Column12
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column13
+		dataType: string
+		lineageTag: db7b6c35-7aba-4387-8305-86e3aa6eb5c3
+		summarizeBy: none
+		sourceColumn: Column13
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column14
+		dataType: string
+		lineageTag: 6e35aed4-b85f-46a3-ae0e-b1064f72cb1f
+		summarizeBy: none
+		sourceColumn: Column14
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column15
+		dataType: string
+		lineageTag: b2cbd682-dfeb-4634-886b-e5460ef15c80
+		summarizeBy: none
+		sourceColumn: Column15
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column16
+		dataType: string
+		lineageTag: aa82dd58-0a4d-4e9e-993f-aca0195e20da
+		summarizeBy: none
+		sourceColumn: Column16
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column17
+		dataType: string
+		lineageTag: 42ccb339-3c26-48d6-bfc5-10bab2f1026a
+		summarizeBy: none
+		sourceColumn: Column17
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column18
+		dataType: string
+		lineageTag: 12617ae2-b81a-47d6-940f-48bfb6069cf6
+		summarizeBy: none
+		sourceColumn: Column18
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column19
+		dataType: string
+		lineageTag: e96e5bf0-db96-4dbc-8cff-47b28bfa73b7
+		summarizeBy: none
+		sourceColumn: Column19
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column20
+		dataType: string
+		lineageTag: cfc6b1c1-65d1-4d4b-b70c-ee430e4f83ef
+		summarizeBy: none
+		sourceColumn: Column20
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column21
+		dataType: string
+		lineageTag: a40faa97-0df0-49cc-82e1-f78e7c760036
+		summarizeBy: none
+		sourceColumn: Column21
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column22
+		dataType: string
+		lineageTag: 593b00b5-21e6-4968-ba3b-431958217247
+		summarizeBy: none
+		sourceColumn: Column22
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column23
+		dataType: string
+		lineageTag: 68ccbd05-53df-48b5-acf7-269e85ddf4e3
+		summarizeBy: none
+		sourceColumn: Column23
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column24
+		dataType: string
+		lineageTag: a226fa1d-2ffd-4400-8111-8408c1273763
+		summarizeBy: none
+		sourceColumn: Column24
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column25
+		dataType: string
+		lineageTag: 12ee2808-1617-472e-be3b-84e10e98becc
+		summarizeBy: none
+		sourceColumn: Column25
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column26
+		dataType: string
+		lineageTag: b0f30515-b88b-48ee-ad66-3af50bd248e3
+		summarizeBy: none
+		sourceColumn: Column26
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column27
+		dataType: string
+		lineageTag: 15f0c7b8-b67b-4a6a-9034-b59ab0c0db3f
+		summarizeBy: none
+		sourceColumn: Column27
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'STABILITAS KEUANGAN' = m
+		mode: import
+		source =
+				let
+				    Source = GoogleSheets.Contents("https://docs.google.com/spreadsheets/d/13DbZIVzPd4ueBI_V5jcBWOYw_VOmY44NSMolUNm8T_8/edit?gid=1402577654#gid=1402577654"),
+				    #"STABILITAS KEUANGAN_Table" = Source{[name="STABILITAS KEUANGAN",ItemKind="Table"]}[Data]
+				in
+				    #"STABILITAS KEUANGAN_Table"
+

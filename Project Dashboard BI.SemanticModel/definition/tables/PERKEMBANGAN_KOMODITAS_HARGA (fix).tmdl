@@ -1,0 +1,52 @@
+table 'PERKEMBANGAN_KOMODITAS_HARGA (fix)'
+	lineageTag: 88c3016f-6750-450a-a375-c60d5a355871
+
+	column Column1
+		dataType: string
+		lineageTag: ed7a7675-499d-42a5-b9c7-7916f7bb48e9
+		summarizeBy: none
+		sourceColumn: Column1
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column2
+		dataType: string
+		lineageTag: f2d0d04c-d687-4be1-ad94-59c6a5bc9b18
+		summarizeBy: none
+		sourceColumn: Column2
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column3
+		dataType: string
+		lineageTag: d1efc236-3a3f-4584-8b2d-ef18bd90ef57
+		summarizeBy: none
+		sourceColumn: Column3
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column4
+		dataType: string
+		lineageTag: 48898d17-00bb-4106-a877-c38d68f69c4d
+		summarizeBy: none
+		sourceColumn: Column4
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column5
+		dataType: string
+		lineageTag: 8280d416-c43c-4a99-9baf-384426bdc230
+		summarizeBy: none
+		sourceColumn: Column5
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'PERKEMBANGAN_KOMODITAS_HARGA (fix)' = m
+		mode: import
+		source =
+				let
+				    Source = GoogleSheets.Contents("https://docs.google.com/spreadsheets/d/13DbZIVzPd4ueBI_V5jcBWOYw_VOmY44NSMolUNm8T_8/edit?gid=1402577654#gid=1402577654"),
+				    #"PERKEMBANGAN_KOMODITAS_HARGA (fix)_Table" = Source{[name="PERKEMBANGAN_KOMODITAS_HARGA (fix)",ItemKind="Table"]}[Data]
+				in
+				    #"PERKEMBANGAN_KOMODITAS_HARGA (fix)_Table"
+

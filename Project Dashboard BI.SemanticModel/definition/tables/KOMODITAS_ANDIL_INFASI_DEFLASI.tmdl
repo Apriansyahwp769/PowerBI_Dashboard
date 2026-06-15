@@ -1,0 +1,60 @@
+table KOMODITAS_ANDIL_INFASI_DEFLASI
+	lineageTag: b0a2a7eb-5cb6-4c1e-9c64-6dd745943527
+
+	column Column1
+		dataType: string
+		lineageTag: 7a7c2f03-3202-4575-b16d-64a29080915e
+		summarizeBy: none
+		sourceColumn: Column1
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column2
+		dataType: string
+		lineageTag: c50909f8-36ac-4c43-b636-3c0b3c1c9273
+		summarizeBy: none
+		sourceColumn: Column2
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column3
+		dataType: string
+		lineageTag: ff56b2d1-4065-48c3-abe4-3c8510f770dc
+		summarizeBy: none
+		sourceColumn: Column3
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column4
+		dataType: string
+		lineageTag: 0277d2d4-0284-4c7b-b0b1-be9b1ff43596
+		summarizeBy: none
+		sourceColumn: Column4
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column5
+		dataType: string
+		lineageTag: e34db6f1-7eeb-4e73-ada2-ab04551c9778
+		summarizeBy: none
+		sourceColumn: Column5
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column6
+		dataType: string
+		lineageTag: 681f49b2-3c31-4b6b-8c49-02eeefa4651b
+		summarizeBy: none
+		sourceColumn: Column6
+
+		annotation SummarizationSetBy = Automatic
+
+	partition KOMODITAS_ANDIL_INFASI_DEFLASI = m
+		mode: import
+		source =
+				let
+				    Source = GoogleSheets.Contents("https://docs.google.com/spreadsheets/d/13DbZIVzPd4ueBI_V5jcBWOYw_VOmY44NSMolUNm8T_8/edit?gid=1402577654#gid=1402577654"),
+				    KOMODITAS_ANDIL_INFASI_DEFLASI_Table = Source{[name="KOMODITAS_ANDIL_INFASI_DEFLASI",ItemKind="Table"]}[Data]
+				in
+				    KOMODITAS_ANDIL_INFASI_DEFLASI_Table
+

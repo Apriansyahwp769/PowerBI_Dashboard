@@ -1,0 +1,140 @@
+table SP_KK
+	lineageTag: 3db6609c-a034-4a9e-8c3d-6d80d444eac1
+
+	column Column1
+		dataType: string
+		lineageTag: 428e876f-18a7-438c-8d22-715c72fc1bdc
+		summarizeBy: none
+		sourceColumn: Column1
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column2
+		dataType: string
+		lineageTag: e7ef850f-c26e-450c-a73b-0ec46be87a20
+		summarizeBy: none
+		sourceColumn: Column2
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column3
+		dataType: string
+		lineageTag: 9d70155f-1f69-4248-9a41-2b472bb91468
+		summarizeBy: none
+		sourceColumn: Column3
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column4
+		dataType: string
+		lineageTag: 24887923-cc6f-4d13-b339-22ec7f73cb1f
+		summarizeBy: none
+		sourceColumn: Column4
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column5
+		dataType: string
+		lineageTag: 9188116e-835f-46ef-bd64-4e5b64f89cc3
+		summarizeBy: none
+		sourceColumn: Column5
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column6
+		dataType: string
+		lineageTag: a4505559-ff3d-4d95-bb43-5c070655e8db
+		summarizeBy: none
+		sourceColumn: Column6
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column7
+		dataType: string
+		lineageTag: d3db3739-14ca-453b-8ebc-7e53dfdb47f4
+		summarizeBy: none
+		sourceColumn: Column7
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column8
+		dataType: string
+		lineageTag: 291af4dd-587a-4edb-9db8-ffc9898d87f1
+		summarizeBy: none
+		sourceColumn: Column8
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column9
+		dataType: string
+		lineageTag: 19fcaf5d-326f-4d1a-856a-5ce381db4d60
+		summarizeBy: none
+		sourceColumn: Column9
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column10
+		dataType: string
+		lineageTag: cf3b5e25-feff-4e71-995f-8943970eb1c8
+		summarizeBy: none
+		sourceColumn: Column10
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column11
+		dataType: string
+		lineageTag: 56865cd9-fd04-476f-8905-9bc08400773a
+		summarizeBy: none
+		sourceColumn: Column11
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column12
+		dataType: string
+		lineageTag: 90f0238b-53a9-4ae8-a0ee-1eb4025a735c
+		summarizeBy: none
+		sourceColumn: Column12
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column13
+		dataType: string
+		lineageTag: 16d92e36-7c28-488b-a4e4-7ecb164a14f8
+		summarizeBy: none
+		sourceColumn: Column13
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column14
+		dataType: string
+		lineageTag: bf2bb268-a216-4ec2-870a-e51ac2025734
+		summarizeBy: none
+		sourceColumn: Column14
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column15
+		dataType: string
+		lineageTag: 0f5a7879-9878-4d74-b9de-b83211b1ccec
+		summarizeBy: none
+		sourceColumn: Column15
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column16
+		dataType: string
+		lineageTag: af3c4796-9e89-406b-80f5-55ebbe1b5911
+		summarizeBy: none
+		sourceColumn: Column16
+
+		annotation SummarizationSetBy = Automatic
+
+	partition SP_KK = m
+		mode: import
+		source =
+				let
+				    Source = GoogleSheets.Contents("https://docs.google.com/spreadsheets/d/13DbZIVzPd4ueBI_V5jcBWOYw_VOmY44NSMolUNm8T_8/edit?gid=1402577654#gid=1402577654"),
+				    SP_KK_Table = Source{[name="SP_KK",ItemKind="Table"]}[Data]
+				in
+				    SP_KK_Table
+

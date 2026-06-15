@@ -1,0 +1,88 @@
+relationship AutoDetected_00bd1cf1-300d-42bc-9c96-ee6d90a79cf5
+	fromColumn: INFLASI_KOMODITAS_ANDIL_KELOMPOK.Column5
+	toColumn: SP_KK.Column5
+
+relationship AutoDetected_189ec370-ebb6-49d6-8ecb-bd33a5679a77
+	fromColumn: KOMODITAS_ANDIL_INFASI_DEFLASI.Column5
+	toColumn: SP_KK.Column5
+
+relationship AutoDetected_25891a35-a518-4f9a-a938-57fcf8aecb12
+	fromColumn: 'PDRB SUMSEL - 1'.Column5
+	toColumn: SP_KK.Column5
+
+relationship AutoDetected_8c216761-1c5d-42db-8ed0-ebe41116ac92
+	fromColumn: 'PDRB SUMSEL - 2'.Column5
+	toColumn: SP_KK.Column5
+
+relationship AutoDetected_04e1d280-cf05-47a2-b8e9-d16bb1f03925
+	fromColumn: PERKEMBANGAN_KOMODITAS_STOK.Column5
+	toColumn: SP_KK.Column5
+
+relationship AutoDetected_fe3fcfcb-6de4-4d16-8562-632d661fa34d
+	fromColumn: PUR.Column5
+	toColumn: SP_KK.Column5
+
+relationship AutoDetected_a7c0f797-39fa-4707-a742-a08dcb935414
+	fromColumn: PUR_POSISI_KAS_EDAR.Column5
+	toColumn: SP_KK.Column5
+
+relationship AutoDetected_ccc6547b-a754-4a55-937d-e4bcaddea946
+	fromColumn: REALISASI_ANGGARAN.Column5
+	toColumn: SP_KK.Column5
+
+relationship AutoDetected_68e4581c-bde3-46d1-8d77-dd12035a0d60
+	fromColumn: SISTEM_PEMBAYARAN.Column5
+	toColumn: SP_KK.Column5
+
+relationship AutoDetected_ea5a6675-d726-4ce3-aa00-4e9321197cbc
+	fromColumn: 'STABILITAS KEUANGAN'.Column5
+	toColumn: SP_KK.Column5
+
+relationship AutoDetected_18c3c2e0-1224-497d-8126-846864d655d9
+	fromColumn: SP_QRIS.Column5
+	toColumn: SP_KK.Column5
+
+relationship AutoDetected_0506a887-6a29-4f61-9c71-20027a4ad5d4
+	fromColumn: INFLASI_KOMODITAS_ANDIL_KELOMPOK.Column5
+	toColumn: SPP_UE.Column5
+
+relationship AutoDetected_cd7f46b5-1f2e-49a5-af3d-4d7b35325b6f
+	fromColumn: KOMODITAS_ANDIL_INFASI_DEFLASI.Column5
+	toColumn: SPP_UE.Column5
+
+relationship AutoDetected_800a4c8a-f0de-428a-b1d0-040a4344c6fa
+	fromColumn: 'PDRB SUMSEL - 1'.Column5
+	toColumn: SPP_UE.Column5
+
+relationship AutoDetected_85408aa9-13a6-4079-b6b6-a7932d8df72e
+	fromColumn: 'PDRB SUMSEL - 2'.Column5
+	toColumn: SPP_UE.Column5
+
+relationship AutoDetected_2b581cc4-ae46-4013-be55-467910909945
+	fromColumn: PERKEMBANGAN_KOMODITAS_STOK.Column5
+	toColumn: SPP_UE.Column5
+
+relationship AutoDetected_61aa70ae-2de7-485f-a490-e4906c175949
+	fromColumn: PUR.Column5
+	toColumn: SPP_UE.Column5
+
+relationship AutoDetected_23a60e87-6288-439b-96bf-db446eb453ac
+	fromColumn: PUR_POSISI_KAS_EDAR.Column5
+	toColumn: SPP_UE.Column5
+
+relationship AutoDetected_095467a0-d34f-452e-8a72-92d0b6ef1eda
+	fromColumn: REALISASI_ANGGARAN.Column5
+	toColumn: SPP_UE.Column5
+
+relationship AutoDetected_b0011aff-59ce-4872-94a0-c89e9a87b11a
+	fromColumn: SISTEM_PEMBAYARAN.Column5
+	toColumn: SPP_UE.Column5
+
+relationship AutoDetected_3f7b2d75-0caf-4bbc-9fbd-581bd0d867e5
+	fromColumn: 'STABILITAS KEUANGAN'.Column5
+	toColumn: SPP_UE.Column5
+
+relationship AutoDetected_8ae87444-d499-4b8c-a297-a4138d855ee1
+	fromColumn: SP_QRIS.Column5
+	toColumn: SPP_UE.Column5
+

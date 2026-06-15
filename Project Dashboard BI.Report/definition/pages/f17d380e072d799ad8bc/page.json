@@ -1,0 +1,8 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "f17d380e072d799ad8bc",
+  "displayName": "Stabilitas Keuangan",
+  "displayOption": "ActualSize",
+  "height": 5101,
+  "width": 1920
+}

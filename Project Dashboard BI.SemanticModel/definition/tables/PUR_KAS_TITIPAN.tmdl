@@ -1,0 +1,52 @@
+table PUR_KAS_TITIPAN
+	lineageTag: ffde8867-b8bd-421f-a961-9a525a018f54
+
+	column Column1
+		dataType: string
+		lineageTag: 087fb35b-0b37-4e65-b791-b17d4d048b06
+		summarizeBy: none
+		sourceColumn: Column1
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column2
+		dataType: string
+		lineageTag: f5e874b5-804d-4add-a73e-76a3f75ccb03
+		summarizeBy: none
+		sourceColumn: Column2
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column3
+		dataType: string
+		lineageTag: ac52e44a-7bd0-4684-81ed-e70da6dfea7f
+		summarizeBy: none
+		sourceColumn: Column3
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column4
+		dataType: string
+		lineageTag: 36ab7c34-9e53-4b86-a8dd-8b6a28d642d3
+		summarizeBy: none
+		sourceColumn: Column4
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column5
+		dataType: string
+		lineageTag: 7217b6c3-835f-479c-8d33-57e6aedd9561
+		summarizeBy: none
+		sourceColumn: Column5
+
+		annotation SummarizationSetBy = Automatic
+
+	partition PUR_KAS_TITIPAN = m
+		mode: import
+		source =
+				let
+				    Source = GoogleSheets.Contents("https://docs.google.com/spreadsheets/d/13DbZIVzPd4ueBI_V5jcBWOYw_VOmY44NSMolUNm8T_8/edit?gid=1402577654#gid=1402577654"),
+				    PUR_KAS_TITIPAN_Table = Source{[name="PUR_KAS_TITIPAN",ItemKind="Table"]}[Data]
+				in
+				    PUR_KAS_TITIPAN_Table
+

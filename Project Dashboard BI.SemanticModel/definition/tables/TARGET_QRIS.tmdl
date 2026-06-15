@@ -1,0 +1,20 @@
+table TARGET_QRIS
+	lineageTag: 5ff8858b-12ca-4bf5-8bc6-e9d96c7db113
+
+	column TARGET_QRIS
+		dataType: string
+		lineageTag: cadb8072-233f-42d2-97e0-d27de520f1d8
+		summarizeBy: none
+		sourceColumn: TARGET_QRIS
+
+		annotation SummarizationSetBy = Automatic
+
+	partition TARGET_QRIS = m
+		mode: import
+		source =
+				let
+				    Source = GoogleSheets.Contents("https://docs.google.com/spreadsheets/d/13DbZIVzPd4ueBI_V5jcBWOYw_VOmY44NSMolUNm8T_8/edit?gid=1402577654#gid=1402577654"),
+				    TARGET_QRIS_Table = Source{[name="TARGET_QRIS",ItemKind="Table"]}[Data]
+				in
+				    TARGET_QRIS_Table
+

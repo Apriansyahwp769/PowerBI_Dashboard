@@ -1,0 +1,92 @@
+table PERKEMBANGAN_KOMODITAS_STOK
+	lineageTag: eb762909-fbed-40b8-9244-448ec270c74b
+
+	column Column1
+		dataType: string
+		lineageTag: f49a2772-2699-4f90-896d-a8b4d4d26315
+		summarizeBy: none
+		sourceColumn: Column1
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column2
+		dataType: string
+		lineageTag: 5805e164-af72-43b8-a0b9-2356dd394888
+		summarizeBy: none
+		sourceColumn: Column2
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column3
+		dataType: string
+		lineageTag: 6b6bfdfb-cd16-449d-8316-32a7577fcff6
+		summarizeBy: none
+		sourceColumn: Column3
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column4
+		dataType: string
+		lineageTag: b96ff8c9-d536-4429-a419-3999aa93b309
+		summarizeBy: none
+		sourceColumn: Column4
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column5
+		dataType: string
+		lineageTag: 97eec5f3-e1e3-4fc3-8996-8559b9ea3d16
+		summarizeBy: none
+		sourceColumn: Column5
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column6
+		dataType: string
+		lineageTag: 7bf0a5b7-819a-46d8-a012-ae88353786ce
+		summarizeBy: none
+		sourceColumn: Column6
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column7
+		dataType: string
+		lineageTag: 56ffa266-c1bd-4b0e-9355-df3a5ede079e
+		summarizeBy: none
+		sourceColumn: Column7
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column8
+		dataType: string
+		lineageTag: 0150fa96-e058-4c73-afbe-a15a64d78a9c
+		summarizeBy: none
+		sourceColumn: Column8
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column9
+		dataType: string
+		lineageTag: a026d7e7-7d86-4c67-a2bb-6682d3992f38
+		summarizeBy: none
+		sourceColumn: Column9
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column10
+		dataType: string
+		lineageTag: e08a467e-8d6c-4e80-b649-c8545955cb52
+		summarizeBy: none
+		sourceColumn: Column10
+
+		annotation SummarizationSetBy = Automatic
+
+	partition PERKEMBANGAN_KOMODITAS_STOK = m
+		mode: import
+		source =
+				let
+				    Source = GoogleSheets.Contents("https://docs.google.com/spreadsheets/d/13DbZIVzPd4ueBI_V5jcBWOYw_VOmY44NSMolUNm8T_8/edit?gid=1402577654#gid=1402577654"),
+				    PERKEMBANGAN_KOMODITAS_STOK_Table = Source{[name="PERKEMBANGAN_KOMODITAS_STOK",ItemKind="Table"]}[Data]
+				in
+				    PERKEMBANGAN_KOMODITAS_STOK_Table
+

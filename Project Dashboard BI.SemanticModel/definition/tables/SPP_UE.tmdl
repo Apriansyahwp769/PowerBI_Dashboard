@@ -1,0 +1,140 @@
+table SPP_UE
+	lineageTag: d3f4f068-92ce-4127-8cbe-325258e2eaf3
+
+	column Column1
+		dataType: string
+		lineageTag: 3760a425-4961-4f20-a204-46fa15d6567f
+		summarizeBy: none
+		sourceColumn: Column1
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column2
+		dataType: string
+		lineageTag: 815105c7-b7c7-406d-a87a-991b7545796c
+		summarizeBy: none
+		sourceColumn: Column2
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column3
+		dataType: string
+		lineageTag: 6116dacd-671a-439f-b2ff-b220ee3ee98f
+		summarizeBy: none
+		sourceColumn: Column3
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column4
+		dataType: string
+		lineageTag: b1b31c72-6a7b-48ee-bc20-c1de3043b467
+		summarizeBy: none
+		sourceColumn: Column4
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column5
+		dataType: string
+		lineageTag: 29cbd09b-985a-406e-80c8-2aa204c961ad
+		summarizeBy: none
+		sourceColumn: Column5
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column6
+		dataType: string
+		lineageTag: b203148f-1f0f-4d04-953b-80bc8a9a864f
+		summarizeBy: none
+		sourceColumn: Column6
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column7
+		dataType: string
+		lineageTag: 76999c2a-0386-4835-bce1-9491e9bbd1b6
+		summarizeBy: none
+		sourceColumn: Column7
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column8
+		dataType: string
+		lineageTag: 11cab2e5-3a1b-46e8-8e95-88fc534e1011
+		summarizeBy: none
+		sourceColumn: Column8
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column9
+		dataType: string
+		lineageTag: 8696eaf8-8490-4fd2-8920-14daa967de63
+		summarizeBy: none
+		sourceColumn: Column9
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column10
+		dataType: string
+		lineageTag: 155455f1-07e1-47ee-9b47-f068471e8a49
+		summarizeBy: none
+		sourceColumn: Column10
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column11
+		dataType: string
+		lineageTag: 93ff11b2-fd71-4fe9-8ca4-7d150eb672da
+		summarizeBy: none
+		sourceColumn: Column11
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column12
+		dataType: string
+		lineageTag: 9b36cc11-1a5a-4fba-a1bb-5e92b85c86ab
+		summarizeBy: none
+		sourceColumn: Column12
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column13
+		dataType: string
+		lineageTag: 89c6404b-786e-40df-93ae-bc014093e452
+		summarizeBy: none
+		sourceColumn: Column13
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column14
+		dataType: string
+		lineageTag: 2e342950-4fe8-4bda-8d1f-710009a98eee
+		summarizeBy: none
+		sourceColumn: Column14
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column15
+		dataType: string
+		lineageTag: b48b1e6c-0155-4ad9-aec7-45528c58b55f
+		summarizeBy: none
+		sourceColumn: Column15
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column16
+		dataType: string
+		lineageTag: 3fe279ad-d4d8-4438-bccb-e13312363764
+		summarizeBy: none
+		sourceColumn: Column16
+
+		annotation SummarizationSetBy = Automatic
+
+	partition SPP_UE = m
+		mode: import
+		source =
+				let
+				    Source = GoogleSheets.Contents("https://docs.google.com/spreadsheets/d/13DbZIVzPd4ueBI_V5jcBWOYw_VOmY44NSMolUNm8T_8/edit?gid=1402577654#gid=1402577654"),
+				    SPP_UE_Table = Source{[name="SPP_UE",ItemKind="Table"]}[Data]
+				in
+				    SPP_UE_Table
+

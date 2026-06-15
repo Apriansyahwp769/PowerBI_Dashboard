@@ -1,0 +1,116 @@
+table 'PDRB SUMSEL - 1'
+	lineageTag: a28459e0-f805-4975-95f6-5dbdc492170b
+
+	column Column1
+		dataType: string
+		lineageTag: 4b5acfe6-3f04-46df-a190-85a09841dd01
+		summarizeBy: none
+		sourceColumn: Column1
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column2
+		dataType: string
+		lineageTag: 0933a0dd-77e9-42b3-bc81-70a217af8a7c
+		summarizeBy: none
+		sourceColumn: Column2
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column3
+		dataType: string
+		lineageTag: c8cd4166-494c-4ec7-99bf-191c5c33e261
+		summarizeBy: none
+		sourceColumn: Column3
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column4
+		dataType: string
+		lineageTag: af85ef1c-6f8e-4717-96b2-8120c4b17806
+		summarizeBy: none
+		sourceColumn: Column4
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column5
+		dataType: string
+		lineageTag: 275edb39-f218-42e6-8265-fc33ed1da959
+		summarizeBy: none
+		sourceColumn: Column5
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column6
+		dataType: string
+		lineageTag: bdec6932-a13d-448e-a230-600a04e00bab
+		summarizeBy: none
+		sourceColumn: Column6
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column7
+		dataType: string
+		lineageTag: d8bd3b4d-2421-4456-8093-4ed72c93904a
+		summarizeBy: none
+		sourceColumn: Column7
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column8
+		dataType: string
+		lineageTag: 7fe6eaec-7dc1-423c-bca0-cf7e109bf9db
+		summarizeBy: none
+		sourceColumn: Column8
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column9
+		dataType: string
+		lineageTag: e360ef8a-a727-4936-8514-f95a02bf8f07
+		summarizeBy: none
+		sourceColumn: Column9
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column10
+		dataType: string
+		lineageTag: f08b5cfb-2a1e-4276-9b69-5ec09013abdc
+		summarizeBy: none
+		sourceColumn: Column10
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column11
+		dataType: string
+		lineageTag: fcd6eb30-d969-47c7-8348-25a68f2b67ad
+		summarizeBy: none
+		sourceColumn: Column11
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column12
+		dataType: string
+		lineageTag: 35b4f9ea-f466-4bd8-b7e1-bb634004fd86
+		summarizeBy: none
+		sourceColumn: Column12
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column13
+		dataType: string
+		lineageTag: 059e5b4d-00ef-4a67-9d50-f1c18b597287
+		summarizeBy: none
+		sourceColumn: Column13
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'PDRB SUMSEL - 1' = m
+		mode: import
+		source =
+				let
+				    Source = GoogleSheets.Contents("https://docs.google.com/spreadsheets/d/13DbZIVzPd4ueBI_V5jcBWOYw_VOmY44NSMolUNm8T_8/edit?gid=1402577654#gid=1402577654"),
+				    #"PDRB SUMSEL - 1_Table" = Source{[name="PDRB SUMSEL - 1",ItemKind="Table"]}[Data]
+				in
+				    #"PDRB SUMSEL - 1_Table"
+

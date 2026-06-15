@@ -1,0 +1,92 @@
+table REALISASI_ANGGARAN
+	lineageTag: 78374344-f4c2-4a66-b5a1-237680e0ff1e
+
+	column Column1
+		dataType: string
+		lineageTag: b7b20821-7117-4b8a-9894-73a1438a7930
+		summarizeBy: none
+		sourceColumn: Column1
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column2
+		dataType: string
+		lineageTag: 4fc2da3b-9a50-43a0-a0b8-b3189137133b
+		summarizeBy: none
+		sourceColumn: Column2
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column3
+		dataType: string
+		lineageTag: 82f061f4-23cc-41ad-a0c6-9fa57d81b7f4
+		summarizeBy: none
+		sourceColumn: Column3
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column4
+		dataType: string
+		lineageTag: b6e50c9f-4b7a-445c-8dbf-ca0154fc6b26
+		summarizeBy: none
+		sourceColumn: Column4
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column5
+		dataType: string
+		lineageTag: df6c307e-4563-43e2-9705-6234daf1dc1b
+		summarizeBy: none
+		sourceColumn: Column5
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column6
+		dataType: string
+		lineageTag: ecae8ddb-87ef-4308-bc40-a6db8e8dd8aa
+		summarizeBy: none
+		sourceColumn: Column6
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column7
+		dataType: string
+		lineageTag: 55347504-ff9a-469f-bae7-ca3979de4fe6
+		summarizeBy: none
+		sourceColumn: Column7
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column8
+		dataType: string
+		lineageTag: b9ba2f30-aa23-42f6-8c7b-14c1b8cb7fa8
+		summarizeBy: none
+		sourceColumn: Column8
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column9
+		dataType: string
+		lineageTag: 4b4d4bb9-b519-49d8-89f4-c902731ebfb9
+		summarizeBy: none
+		sourceColumn: Column9
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column10
+		dataType: string
+		lineageTag: 34e29a13-ca6b-4aea-8f78-a606e952356c
+		summarizeBy: none
+		sourceColumn: Column10
+
+		annotation SummarizationSetBy = Automatic
+
+	partition REALISASI_ANGGARAN = m
+		mode: import
+		source =
+				let
+				    Source = GoogleSheets.Contents("https://docs.google.com/spreadsheets/d/13DbZIVzPd4ueBI_V5jcBWOYw_VOmY44NSMolUNm8T_8/edit?gid=1402577654#gid=1402577654"),
+				    REALISASI_ANGGARAN_Table = Source{[name="REALISASI_ANGGARAN",ItemKind="Table"]}[Data]
+				in
+				    REALISASI_ANGGARAN_Table
+

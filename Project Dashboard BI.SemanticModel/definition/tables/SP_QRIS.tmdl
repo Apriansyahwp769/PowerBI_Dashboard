@@ -1,0 +1,140 @@
+table SP_QRIS
+	lineageTag: 212d30b2-efd9-4531-a1ea-e6fdd6f1a3b8
+
+	column Column1
+		dataType: string
+		lineageTag: 35a90959-5d55-43d1-84eb-41fc46e297c9
+		summarizeBy: none
+		sourceColumn: Column1
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column2
+		dataType: string
+		lineageTag: 7422b49c-53b9-4b2f-bd5f-eed73e4e38bf
+		summarizeBy: none
+		sourceColumn: Column2
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column3
+		dataType: string
+		lineageTag: f6825387-6194-4c3e-acdc-e28ff12e2a50
+		summarizeBy: none
+		sourceColumn: Column3
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column4
+		dataType: string
+		lineageTag: efc8c0d8-8ecc-49fd-a964-10c5794633e0
+		summarizeBy: none
+		sourceColumn: Column4
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column5
+		dataType: string
+		lineageTag: 05f0ee9d-8815-4bbd-9ede-85cb5d66487e
+		summarizeBy: none
+		sourceColumn: Column5
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column6
+		dataType: string
+		lineageTag: 6b41215a-c03c-4588-b4e6-6a05892ea553
+		summarizeBy: none
+		sourceColumn: Column6
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column7
+		dataType: string
+		lineageTag: 21e7a836-7cec-4a04-b152-35a558271afe
+		summarizeBy: none
+		sourceColumn: Column7
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column8
+		dataType: string
+		lineageTag: 981a0945-b019-4b8d-8e1b-e7a3ca78039c
+		summarizeBy: none
+		sourceColumn: Column8
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column9
+		dataType: string
+		lineageTag: d0c9ec7f-23ad-470b-baaa-3052f8920a21
+		summarizeBy: none
+		sourceColumn: Column9
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column10
+		dataType: string
+		lineageTag: c228a81e-17ab-47fd-bb27-924a2022d05c
+		summarizeBy: none
+		sourceColumn: Column10
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column11
+		dataType: string
+		lineageTag: 55248072-061f-4459-b8c7-4f980892f98c
+		summarizeBy: none
+		sourceColumn: Column11
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column12
+		dataType: string
+		lineageTag: bda437dc-f1fe-446f-af72-76aa90303804
+		summarizeBy: none
+		sourceColumn: Column12
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column13
+		dataType: string
+		lineageTag: 8173d80a-7f54-48d6-915d-44865942924e
+		summarizeBy: none
+		sourceColumn: Column13
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column14
+		dataType: string
+		lineageTag: 84573070-50fc-407b-abad-5d2782ebb5ab
+		summarizeBy: none
+		sourceColumn: Column14
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column15
+		dataType: string
+		lineageTag: fa2deed7-acf3-4a05-bf2d-44ff3ac5efb7
+		summarizeBy: none
+		sourceColumn: Column15
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column16
+		dataType: string
+		lineageTag: c87f06f0-2622-4384-b138-4c3b42d1a039
+		summarizeBy: none
+		sourceColumn: Column16
+
+		annotation SummarizationSetBy = Automatic
+
+	partition SP_QRIS = m
+		mode: import
+		source =
+				let
+				    Source = GoogleSheets.Contents("https://docs.google.com/spreadsheets/d/13DbZIVzPd4ueBI_V5jcBWOYw_VOmY44NSMolUNm8T_8/edit?gid=1402577654#gid=1402577654"),
+				    SP_QRIS_Table = Source{[name="SP_QRIS",ItemKind="Table"]}[Data]
+				in
+				    SP_QRIS_Table
+

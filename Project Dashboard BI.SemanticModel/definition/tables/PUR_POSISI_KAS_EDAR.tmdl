@@ -1,0 +1,68 @@
+table PUR_POSISI_KAS_EDAR
+	lineageTag: 2f2df83a-a0d6-44b6-9ce5-d99c54133918
+
+	column Column1
+		dataType: string
+		lineageTag: fcd01344-9181-4c64-8b1b-458fdab3ace4
+		summarizeBy: none
+		sourceColumn: Column1
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column2
+		dataType: string
+		lineageTag: adabe05d-3c16-403c-aa5a-7cd9183b9b52
+		summarizeBy: none
+		sourceColumn: Column2
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column3
+		dataType: string
+		lineageTag: ca00818b-9a73-4d1f-a9f9-924196a3da7c
+		summarizeBy: none
+		sourceColumn: Column3
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column4
+		dataType: string
+		lineageTag: 8a5b2c3e-eae0-4d7a-8ab9-cc6e932ac5b5
+		summarizeBy: none
+		sourceColumn: Column4
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column5
+		dataType: string
+		lineageTag: da10125c-ed52-4b37-8a2a-d16ed2522ca2
+		summarizeBy: none
+		sourceColumn: Column5
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column6
+		dataType: string
+		lineageTag: 6523f66c-dbc9-4a90-8014-c0ceea8200f1
+		summarizeBy: none
+		sourceColumn: Column6
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column7
+		dataType: string
+		lineageTag: f5b52054-5117-47ab-a4c1-cc93155f4e1d
+		summarizeBy: none
+		sourceColumn: Column7
+
+		annotation SummarizationSetBy = Automatic
+
+	partition PUR_POSISI_KAS_EDAR = m
+		mode: import
+		source =
+				let
+				    Source = GoogleSheets.Contents("https://docs.google.com/spreadsheets/d/13DbZIVzPd4ueBI_V5jcBWOYw_VOmY44NSMolUNm8T_8/edit?gid=1402577654#gid=1402577654"),
+				    PUR_POSISI_KAS_EDAR_Table = Source{[name="PUR_POSISI_KAS_EDAR",ItemKind="Table"]}[Data]
+				in
+				    PUR_POSISI_KAS_EDAR_Table
+

@@ -1,0 +1,60 @@
+table INFLASI_PERDAERAH
+	lineageTag: 4a31a9d3-d20e-4059-b1c0-3a43d732b6c6
+
+	column Column1
+		dataType: string
+		lineageTag: d6e2d1f2-b409-4afe-a9cf-b3e89ba48df9
+		summarizeBy: none
+		sourceColumn: Column1
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column2
+		dataType: string
+		lineageTag: bef23097-9b26-4b8d-8600-3d2afc067e45
+		summarizeBy: none
+		sourceColumn: Column2
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column3
+		dataType: string
+		lineageTag: 79ca933b-a7e3-4943-a57b-a789b7796eaa
+		summarizeBy: none
+		sourceColumn: Column3
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column4
+		dataType: string
+		lineageTag: af2ba273-97fa-4d9e-9369-fb1185103724
+		summarizeBy: none
+		sourceColumn: Column4
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column5
+		dataType: string
+		lineageTag: 1dad6e2d-f921-4e1b-8cc1-b12dbe465002
+		summarizeBy: none
+		sourceColumn: Column5
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column6
+		dataType: string
+		lineageTag: 37702460-8798-42e8-898d-8a9e3773a989
+		summarizeBy: none
+		sourceColumn: Column6
+
+		annotation SummarizationSetBy = Automatic
+
+	partition INFLASI_PERDAERAH = m
+		mode: import
+		source =
+				let
+				    Source = GoogleSheets.Contents("https://docs.google.com/spreadsheets/d/13DbZIVzPd4ueBI_V5jcBWOYw_VOmY44NSMolUNm8T_8/edit?gid=1402577654#gid=1402577654"),
+				    INFLASI_PERDAERAH_Table = Source{[name="INFLASI_PERDAERAH",ItemKind="Table"]}[Data]
+				in
+				    INFLASI_PERDAERAH_Table
+
