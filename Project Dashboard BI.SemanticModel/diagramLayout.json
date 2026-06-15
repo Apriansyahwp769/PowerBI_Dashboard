@@ -1,0 +1,256 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 581.46035419602606,
+            "y": -50
+          },
+          "nodeIndex": "INFLASI_KOMODITAS_ANDIL_KELOMPOK",
+          "nodeLineageTag": "9c9ec695-d34b-417b-b50e-a5efe10ba180",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1826.9822207255093,
+            "y": 681.15841259748822
+          },
+          "nodeIndex": "INFLASI_PERDAERAH",
+          "nodeLineageTag": "4a31a9d3-d20e-4059-b1c0-3a43d732b6c6",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1300.2670900442286,
+            "y": 1223.8278661711861
+          },
+          "nodeIndex": "KOMODITAS_ANDIL_INFASI_DEFLASI",
+          "nodeLineageTag": "b0a2a7eb-5cb6-4c1e-9c64-6dd745943527",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 50,
+            "y": 422.21215290212319
+          },
+          "nodeIndex": "PDRB SUMSEL - 1",
+          "nodeLineageTag": "a28459e0-f805-4975-95f6-5dbdc492170b",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1156.8646167271258,
+            "y": 441.67436394193965
+          },
+          "nodeIndex": "PDRB SUMSEL - 2",
+          "nodeLineageTag": "df8850c8-d2e6-4aa8-a523-bc4978f513bf",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2110.9822207255093,
+            "y": 693.15841259748822
+          },
+          "nodeIndex": "PERKEMBANGAN_KOMODITAS_HARGA (fix)",
+          "nodeLineageTag": "88c3016f-6750-450a-a375-c60d5a355871",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 288.73143742510365,
+            "y": 61.490253958480935
+          },
+          "nodeIndex": "PERKEMBANGAN_KOMODITAS_STOK",
+          "nodeLineageTag": "eb762909-fbed-40b8-9244-448ec270c74b",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 716.45616450526973,
+            "y": 1183.5233309661953
+          },
+          "nodeIndex": "PUR",
+          "nodeLineageTag": "4dd2e1a6-d655-4be7-8dc6-dc22b3522c3c",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2394.9822207255093,
+            "y": 693.15841259748822
+          },
+          "nodeIndex": "PUR_ESTIMASI_KEBUTUHAN",
+          "nodeLineageTag": "b072c6db-3354-4182-a853-578771cdaa35",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2678.9822207255093,
+            "y": 693.15841259748822
+          },
+          "nodeIndex": "PUR_KAS_TITIPAN",
+          "nodeLineageTag": "ffde8867-b8bd-421f-a961-9a525a018f54",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1592.9822207255093,
+            "y": 944.11723220500653
+          },
+          "nodeIndex": "PUR_POSISI_KAS_EDAR",
+          "nodeLineageTag": "2f2df83a-a0d6-44b6-9ce5-d99c54133918",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1008.3152940756186,
+            "y": 1236.3168251949767
+          },
+          "nodeIndex": "REALISASI_ANGGARAN",
+          "nodeLineageTag": "78374344-f4c2-4a66-b5a1-237680e0ff1e",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 455.48444134175833,
+            "y": 769.74506438688832
+          },
+          "nodeIndex": "SISTEM_PEMBAYARAN",
+          "nodeLineageTag": "d141606a-5eae-4125-ac39-7792d79613c5",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1009.2402652416209,
+            "y": 852.250881703988
+          },
+          "nodeIndex": "SP_KK",
+          "nodeLineageTag": "3db6609c-a034-4a9e-8c3d-6d80d444eac1",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 867.951378922847,
+            "y": 107.65079280721193
+          },
+          "nodeIndex": "SP_QRIS",
+          "nodeLineageTag": "212d30b2-efd9-4531-a1ea-e6fdd6f1a3b8",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 747.38394167780393,
+            "y": 495.75791430454717
+          },
+          "nodeIndex": "SPP_UE",
+          "nodeLineageTag": "d3f4f068-92ce-4127-8cbe-325258e2eaf3",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1301.9040935958267,
+            "y": 725.2455957002519
+          },
+          "nodeIndex": "STABILITAS KEUANGAN",
+          "nodeLineageTag": "3ebdeee6-f4ab-492a-8d68-2335d7ea1ca0",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2962.9822207255093,
+            "y": 741.15841259748822
+          },
+          "nodeIndex": "TARGET_QRIS",
+          "nodeLineageTag": "5ff8858b-12ca-4bf5-8bc6-e9d96c7db113",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}
